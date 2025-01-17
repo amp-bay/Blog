@@ -35,7 +35,7 @@ class UpdateUserSerializer(serializers.ModelSerializer):
 class AuthorDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model=get_user_model()
-        fields=["id","username","first_name","last_name"]
+        fields=["id","profile","username","first_name","last_name"]
         
         
 class BlogSerializer(serializers.ModelSerializer):
